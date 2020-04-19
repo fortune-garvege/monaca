@@ -6,19 +6,19 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
-    
+
     <script>
         function omikuji (){
             var dice = Math.floor(Math.random() * 3);
             var image_name;
             if (dice == 0) {
-                image_name = "omikuji-daikichi.png";
+                image_name = "denkinezumi.png";
             } else if  (dice == 1) {
-                image_name = "omikuji-chuukichi.png";
+                image_name = "kureyonsyounen.png";
             } else {
                 image_name = "omikuji-hei.png";
             }
-        
+
             document.getElementById("saisyo").style["display"] = "none";
             document.getElementById("kekka").src = "images/" + image_name;
             document.getElementById("kekka").style["display"] = "inline";
@@ -39,9 +39,9 @@
             margin-left : 0;
             margin-right : 0;
         }
-        
+
         img {
-           width: 70%; 
+           width: 70%;
         }
 
         #bottombar {
